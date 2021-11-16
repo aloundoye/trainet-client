@@ -19,16 +19,16 @@ function Header() {
             <Link href="/formations">FORMATIONS</Link>
           </li>
           <li>
-            <Link href="/">FORUMS</Link>
+            <Link href="/forums">FORUMS</Link>
           </li>
           <li>
-            <Link href="/">FORMATEURS</Link>
+            <Link href="/formateurs">FORMATEURS</Link>
           </li>
           <li>
-            <Link href="/">BLOG</Link>
+            <Link href="/blog">BLOG</Link>
           </li>
           <li>
-            <Link href="/">CONTACT</Link>
+            <Link href="/contact">CONTACT</Link>
           </li>
         </ul>
       </nav>
