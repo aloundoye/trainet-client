@@ -20,6 +20,7 @@ export default function DropDown(props) {
   const [isShown, setIsShown] = useState(false);
 
   return (
+    //Composant headlessUI pour creer un menu dropdown
     <Menu
       as="div"
       className="relative inline-block text-left"
@@ -27,12 +28,9 @@ export default function DropDown(props) {
       onMouseLeave={() => setIsShown(false)}
     >
       <div>
-        <Menu.Button className="inline-flex">
+        <Menu.Button className="inline-flex font-normal uppercased">
           {props.name}
-          <ChevronDownIcon
-            className="-mr-1 ml-2 h-5 w-5 mt-2"
-            aria-hidden="true"
-          />
+          <ChevronDownIcon className=" h-5 w-5 mt-2" aria-hidden="true" />
         </Menu.Button>
       </div>
       {isShown && (
@@ -51,6 +49,7 @@ export default function DropDown(props) {
             className="origin-top-right absolute right-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
           >
             <div className="py-1">
+              {/* iteration des elements du dropdown */}
               {props.items.map((item) => (
                 <Menu.Item key={item.id}>
                   {({ active }) => (

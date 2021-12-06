@@ -1,3 +1,3 @@
 export default function OrganismesFormations() {
-  return "OrganismesFormations";
+  return "Organismes Formations";
 }

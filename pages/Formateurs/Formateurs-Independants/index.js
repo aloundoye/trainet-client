@@ -1,3 +1,3 @@
 export default function FormateursIndependants() {
-  return "FormateursIndependants";
+  return "Formateurs Independants";
 }
