@@ -1,0 +1,65 @@
+.second_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.second_nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #4f6a78;
+}
+.infos {
+  display: flex;
+  gap: 20px;
+}
+.nous_suivre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nous_suivre svg {
+  color: #fff;
+  background-color: #4f6a78;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  padding: 3px 2px;
+}
+
+.nous_suivre a {
+}
+.nous_suivre p {
+  color: #4f6a78;
+}
+
+.compte {
+  display: flex;
+  gap: 20px;
+}
+
+.compte button {
+  border: none;
+  background: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.compte button svg {
+  width: 21px;
+  height: 17px;
+}
+.connexion {
+  color: red;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inscription {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1c65a1;
+}

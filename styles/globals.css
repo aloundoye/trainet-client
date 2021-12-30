@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
-html,
-body {
-  font-family: Lato, sans-serif;
-}
 
 html,
 body,
@@ -90,6 +86,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: Lato, sans-serif;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */

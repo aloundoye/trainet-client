@@ -1,3 +1,5 @@
-export default function Formations() {
+function Formations() {
   return "Formations";
 }
+
+export default Formations;

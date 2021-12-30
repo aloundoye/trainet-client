@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Navigation from "./Navigation";
+import SecondNav from "./SeconNav";
 import styles from "@/styles/components/Header.module.css";
 function Header() {
   const router = useRouter();
   return (
     <header>
       {/* navigation secondaire */}
-      <nav></nav>
+      <SecondNav />
       {/* Navigation principale */}
       <nav>
         {router.pathname !== "/" && (

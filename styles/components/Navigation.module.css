@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .nav ul {
@@ -17,7 +17,8 @@
 }
 .nav a {
   list-style: none;
-  font-size: 22/27px;
+  letter-spacing: 0px;
+  font-size: 22px;
   text-decoration: none;
   color: #4f6a78;
 }
