@@ -7,7 +7,7 @@ import styles from "@/styles/components/Header.module.css";
 function Header() {
   const router = useRouter();
   return (
-    <header className={styles.header}>
+    <header>
       {/* navigation secondaire */}
       <SecondNav />
       {/* Navigation principale */}

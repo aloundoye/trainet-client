@@ -18,7 +18,7 @@
 .nav a {
   list-style: none;
   letter-spacing: 0px;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: #4f6a78;
 }
@@ -50,6 +50,7 @@
   border: 1px solid #00000026;
   border-radius: 0 10px 10px 0;
   border-left: 0;
+  cursor: pointer;
 }
 
 .search_button i {

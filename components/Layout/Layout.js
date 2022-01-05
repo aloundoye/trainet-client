@@ -5,7 +5,7 @@ import Head from "next/head";
 
 function Layout(props) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
         <title>Trainet</title>
@@ -16,7 +16,7 @@ function Layout(props) {
         ></link>
       </Head>
       <Header />
-      <main>{props.children}</main>
+      <main className={styles.container}>{props.children}</main>
       <Footer />
     </div>
   );

@@ -1,7 +1,6 @@
-.footer {
-  grid-column: 1/-1;
+.blue {
   background-color: #f3f7fa;
-  height: 400px;
+  width: 100%;
 }
 
 .flex_container {
@@ -80,7 +79,7 @@
 .row {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 25px;
 }
 .search_container {
   display: flex;
@@ -88,7 +87,7 @@
 }
 
 .search_container input {
-  width: 350px;
+  width: 300px;
   height: 37px;
   box-shadow: 0px 3px 3px #0000000d;
   background-color: #fff;
@@ -114,13 +113,15 @@
   border-radius: 0px 10px 10px 0px;
   font-size: 18px;
   border: none;
+  cursor: pointer;
 }
 
 .bottomline {
   display: flex;
   justify-content: space-between;
-  margin-top: 35px;
+  margin: 0 auto;
   color: #4f6a78;
+  padding: 30px 0;
 }
 
 .bottomline strong {
