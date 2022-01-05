@@ -22,10 +22,21 @@
   width: 200px;
 }
 
+.infos svg {
+  color: #1c65a1;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  padding: 3px 2px;
+}
+.infos a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .infos span {
   color: #1c65a1;
   font-weight: bold;
-  margin-right: 5px;
 }
 
 .infos p {

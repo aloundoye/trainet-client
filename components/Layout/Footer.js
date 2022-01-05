@@ -5,6 +5,8 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import GlobeIcon from "../icons/globe-icons";
+import PhoneIcon from "../icons/phone-icon";
 
 function Footer() {
   library.add(fab);
@@ -20,11 +22,17 @@ function Footer() {
               TRAINET, le portail de la formation professionnelle continue en
               Afrique
             </p>
-            <a href="tel:+221338242538">+221 33 824 25 38</a>
+            <a href="tel:+221338242538">
+              <PhoneIcon />
+              +221 33 824 25 38
+            </a>
             <a href="mailto:contact@trainet.net">
               <span>@</span>contact@trainet.net
             </a>
-            <a href="/">www.trainet.net</a>
+            <a href="/">
+              <GlobeIcon />
+              www.trainet.net
+            </a>
           </section>
 
           <section className={styles.column_section}>
