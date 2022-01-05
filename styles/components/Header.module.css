@@ -1,3 +1,7 @@
+.header {
+  grid-column: 1/-1;
+}
+
 .nav_blue {
   background-color: #f3f7fa;
   width: 100%;

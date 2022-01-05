@@ -3,10 +3,11 @@ import { useRouter } from "next/router";
 import Navigation from "./Navigation";
 import SecondNav from "./SeconNav";
 import styles from "@/styles/components/Header.module.css";
+
 function Header() {
   const router = useRouter();
   return (
-    <header>
+    <header className={styles.header}>
       {/* navigation secondaire */}
       <SecondNav />
       {/* Navigation principale */}

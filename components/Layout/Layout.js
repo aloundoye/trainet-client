@@ -1,11 +1,11 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import { Fragment } from "react";
+import styles from "@/styles/components/Layout.module.css";
 import Head from "next/head";
 
 function Layout(props) {
   return (
-    <Fragment>
+    <div className={styles.container}>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
         <title>Trainet</title>
@@ -18,7 +18,7 @@ function Layout(props) {
       <Header />
       <main>{props.children}</main>
       <Footer />
-    </Fragment>
+    </div>
   );
 }
 
