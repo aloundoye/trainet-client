@@ -1,7 +1,7 @@
 import Showcase from "@/components/UI/Showcase";
 import styles from "@/styles/pages/Formations.module.css";
 import Container from "@/components/UI/Container";
-function Formations() {
+export default function Formations({ formations }) {
   return (
     <div className={styles.formation}>
       <Showcase></Showcase>
@@ -58,4 +58,22 @@ function Formations() {
   );
 }
 
-export default Formations;
+export async function getStaticProps() {
+  const qs = require("qs");
+  const query = qs.stringify(
+    {
+      populate: "image",
+    },
+    {
+      encodeValuesOnly: true,
+    }
+  );
+
+  const response = await fetch(`${API_URL}/api/formations?${query}`);
+  const formations = response.json();
+
+  return {
+    props: { formations },
+    revalidate: 1,
+  };
+}
