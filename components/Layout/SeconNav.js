@@ -18,16 +18,24 @@ function SecondNav() {
           </div>
           <div className={styles.nous_suivre}>
             <p>nous suivre</p>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={["fab", "facebook-f"]} />
             </a>
-            <a href="https://twitter.com/" target="_blank">
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "twitter"]} />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
             </a>
-            <a href="https://www.youtube.com/" target="_blank">
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "youtube"]} />
             </a>
           </div>

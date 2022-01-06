@@ -1,5 +1,5 @@
 {
-  "name": "Trainet",
+  "name": "trainet",
   "private": true,
   "scripts": {
     "dev": "next dev",

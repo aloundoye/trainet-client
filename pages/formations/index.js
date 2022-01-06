@@ -1,10 +1,14 @@
 import Showcase from "@/components/UI/Showcase";
 import styles from "@/styles/pages/Formations.module.css";
 import Container from "@/components/UI/Container";
+import { API_URL } from "@/config/index";
 export default function Formations({ formations }) {
+  console.log(formations);
+
   return (
     <div className={styles.formation}>
       <Showcase></Showcase>
+
       <p>
         <Container>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -70,7 +74,7 @@ export async function getStaticProps() {
   );
 
   const response = await fetch(`${API_URL}/api/formations?${query}`);
-  const formations = response.json();
+  const formations = await response.json();
 
   return {
     props: { formations },
