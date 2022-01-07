@@ -4,6 +4,7 @@ import Container from "@/components/UI/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+
 function SecondNav() {
   library.add(fab);
 
@@ -46,7 +47,7 @@ function SecondNav() {
                 focusable="false"
                 data-prefix="fas"
                 data-icon="user-lock"
-                class="svg-inline--fa fa-user-lock fa-w-20"
+                className="svg-inline--fa fa-user-lock fa-w-20"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"
@@ -64,7 +65,7 @@ function SecondNav() {
                 focusable="false"
                 data-prefix="fas"
                 data-icon="user-plus"
-                class="svg-inline--fa fa-user-plus fa-w-20"
+                className="svg-inline--fa fa-user-plus fa-w-20"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"
