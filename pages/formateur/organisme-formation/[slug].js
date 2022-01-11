@@ -1,12 +1,13 @@
 import { API_URL } from "@/config.index";
 
-export default function OrganismeFormation() {
+export default function OrganismeFormation({ecole}) {
+  console.log(ecole);
   return "OrganismeFormation";
 }
 
 export async function getStaticPaths() {
   const response = await fetch(`${API_URL}/api/ecoles`);
-  const ecoles = response.json();
+  const ecoles = await response.json();
 
   const paths = ecoles.data.map((ecole) => ({
     params: { slug: ecole.attributes.slug },
@@ -27,7 +28,7 @@ export async function getStaticProps({ params: { slug } }) {
   );
 
   const response = await fetch(`${API_URL}/api/ecoles${query}`);
-  const ecole = response.json();
+  const ecole = await response.json();
 
   return { props: { ecole: ecole.data[0].attributes }, revalidate: 1 };
 }

@@ -1,5 +1,7 @@
 import { API_URL } from "@/config/index";
-export default function FormateurIndependant() {
+export default function FormateurIndependant({ formateur }) {
+  console.log(formateur);
+
   return "FormateurIndependant";
 }
 

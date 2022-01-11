@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/components/Navigation.module.css";
-import Container from "@/components/UI/Container";
+import Container from "@/components/common/Container";
 function Navigation() {
   return (
     <Container>

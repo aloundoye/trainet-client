@@ -1,6 +1,6 @@
-import Showcase from "@/components/UI/Showcase";
+import Showcase from "@/components/common/Showcase";
 import styles from "@/styles/pages/Formations.module.css";
-import Container from "@/components/UI/Container";
+import Container from "@/components/common/Container";
 import { API_URL } from "@/config/index";
 
 export default function Formations({ formations }) {

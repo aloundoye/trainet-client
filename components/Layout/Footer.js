@@ -1,4 +1,4 @@
-import Container from "@/components/UI/Container";
+import Container from "@/components/common/Container";
 import styles from "@/styles/components/Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
