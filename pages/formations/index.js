@@ -1,6 +1,6 @@
-import Showcase from "@/components/common/Showcase";
+import BlueBackgroundGradient from "@/components/common/blue-linear-gradient";
 import styles from "@/styles/pages/Formations.module.css";
-import Container from "@/components/common/Container";
+import Container from "@/components/common/container";
 import { API_URL } from "@/config/index";
 
 export default function Formations({ formations }) {
@@ -8,7 +8,7 @@ export default function Formations({ formations }) {
 
   return (
     <div className={styles.formation}>
-      <Showcase></Showcase>
+      <BlueBackgroundGradient></BlueBackgroundGradient>
       {formations.data.length === 0 && <h3>No events to show</h3>}
       <Container>
         Phasellus at nulla nec dui commodo ultricies at sit amet est. Nulla

@@ -1,0 +1,70 @@
+.showcase {
+  border-radius: 30px;
+  background: url("/images/fond-a-propos.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  height: 250px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.container h1 {
+  font-style: italic;
+  margin: 0;
+  font-size: 3rem;
+  text-shadow: 0px 3px 6px #00000029;
+  letter-spacing: 0px;
+}
+
+.main {
+  color: #4f6a78;
+  font-size: 18px;
+}
+.main p {
+  margin-bottom: 10px;
+}
+.main ul {
+  margin-top: 10px;
+}
+.main li {
+  margin-bottom: 10px;
+}
+.main li svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  color: #1c65a1;
+}
+
+.bloc {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.bloc p {
+  padding: 20px;
+  background-color: #1c65a1;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.bloc svg {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+
+  color: #ffffff;
+}

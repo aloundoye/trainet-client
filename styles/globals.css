@@ -125,3 +125,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 50px;
+}

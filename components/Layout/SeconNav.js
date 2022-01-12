@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "@/styles/components/SecondNav.module.css";
-import Container from "@/components/common/Container";
+import Container from "@/components/common/container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";

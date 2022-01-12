@@ -1,4 +1,4 @@
-import Container from "@/components/common/Container";
+import Container from "@/components/common/container";
 import styles from "@/styles/components/Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,6 +21,7 @@ function Footer() {
                 src="/images/logo-trainet.png"
                 width="212px"
                 height="55px"
+                alt="logo"
               />
 
               <p>
@@ -34,24 +35,38 @@ function Footer() {
               <a href="mailto:contact@trainet.net">
                 <span>@</span>contact@trainet.net
               </a>
-              <a href="/">
-                <GlobeIcon />
-                www.trainet.net
-              </a>
+              <Link href="/">
+                <a>
+                  <GlobeIcon />
+                  www.trainet.net
+                </a>
+              </Link>
             </section>
 
             <section className={styles.column_section}>
               <div className={styles.nous_suivre}>
-                <a href="https://www.facebook.com/" target="_blank">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={["fab", "facebook-f"]} />
                 </a>
-                <a href="https://twitter.com/" target="_blank">
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={["fab", "twitter"]} />
                 </a>
-                <a href="https://www.linkedin.com/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
                 </a>
-                <a href="https://www.youtube.com/" target="_blank">
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={["fab", "youtube"]} />
                 </a>
               </div>
@@ -90,7 +105,7 @@ function Footer() {
                 <span>@</span>
                 <input type="text" name="search" placeholder="Adresse Email" />
                 <button type="submit" className={styles.search_button}>
-                  Je m'abonne à la Newsletter
+                  {"Je m'abonne à la Newsletter"}
                 </button>
               </div>
 
